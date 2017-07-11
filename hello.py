@@ -5,4 +5,5 @@ def greet():
     size = mpi.COMM_WORLD.Get_size()
     print("Hello from {0} of {1}!".format(rank,size))
 
-greet()
+if __name__ == "__main__":
+    greet()
